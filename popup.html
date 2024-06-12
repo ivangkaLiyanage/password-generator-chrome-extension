@@ -11,10 +11,19 @@
         <h1>Password Generator</h1>
         <label for="length">Length:</label>
         <input type="number" name="number" id="length" value="12" min="6" max="128">
+        <label for="uppercase">Uppercase</label>
+        <input type="checkbox" id="uppercase" >
+        <label for="lowercase">Lowecase</label >
+        <input type="checkbox" id="lowercase" >
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="numbers" >
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="symbols" >
         <br>
         <button id="generate">Generate</button>
         <br>
-        <textarea id="pasword" readonly></textarea>
+        <textarea id="pasword" readonly ></textarea>
+        <button id="copyButton">Copy Password</button>
     </div>
     <script src="popup.js"></script>
 </body>
