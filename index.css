@@ -1,0 +1,481 @@
+.passwordgeneratorframe-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .passwordgeneratorframe-passwordgeneratorframe {
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 149px 454px;
+    overflow: hidden;
+    align-items: flex-start;
+    padding-right: 1173px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .passwordgeneratorframe-passwordtextbox {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .passwordgeneratorframe-rectangle2 {
+    width: 269px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-image: url("public/external/rectangle228-5pak-200h.png");
+    background-position: center;
+  }
+  .passwordgeneratorframe-textarea {
+    fill: #d0d0d0;
+    color: #d0d0d0;
+    width: 227px;
+    height: 50px;
+    align-self: center;
+    text-align: center;
+    font-family: "Courier New";
+    padding-top: var(--dl-space-space-unit);
+    border-color: #24232a;
+    background-color: #24232a;
+  }
+  .passwordgeneratorframe-button {
+    width: var(--dl-size-size-xsmall);
+    height: var(--dl-size-size-small);
+    margin: var(--dl-space-space-halfunit);
+    display: flex;
+    padding: 0px;
+    align-self: center;
+    font-family: "Courier New";
+    border-style: hidden;
+    flex-direction: row;
+    background-color: #24232a;
+  }
+  .passwordgeneratorframe-icon {
+    fill: #ff4949;
+    width: 33px;
+    height: 100%;
+    border-color: #24232a;
+    border-style: hidden;
+    border-width: 0px;
+  }
+  .passwordgeneratorframe-passwordselectionbox {
+    gap: 10px;
+    height: 325px;
+    display: flex;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .passwordgeneratorframe-rectangle1 {
+    width: 269px;
+    height: 305px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: flex-start;
+    background-image: url("public/external/rectangle127-yiql.svg");
+    background-position: center;
+  }
+  .passwordgeneratorframe-container1 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .passwordgeneratorframe-character-length {
+    top: 28px;
+    left: 24px;
+    color: rgb(208, 208, 208);
+    height: auto;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    font-size: 12px;
+    align-self: flex-start;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-length {
+    top: 22px;
+    color: rgb(255, 73, 73);
+    right: 24px;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    font-size: 20px;
+    align-self: stretch;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-textinput {
+    top: 57px;
+    left: 20px;
+    width: 226px;
+    height: 23px;
+    position: absolute;
+  }
+  .passwordgeneratorframe-uppercase {
+    top: 93px;
+    left: 18px;
+    width: 193px;
+    height: 20px;
+    display: flex;
+    z-index: 6;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    justify-content: flex-start;
+  }
+  .passwordgeneratorframe-text {
+    top: 4px;
+    left: 30px;
+    color: rgb(208, 208, 208);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-checkbox {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    z-index: 100;
+    position: absolute;
+    align-self: center;
+    animation-name: none;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+  .passwordgeneratorframe-lowercase {
+    top: 113px;
+    left: 18px;
+    width: 193px;
+    height: 20px;
+    display: flex;
+    z-index: 7;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .passwordgeneratorframe-group2 {
+    top: 0px;
+    left: 0px;
+    width: 193px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 1;
+    justify-content: flex-start;
+  }
+  .passwordgeneratorframe-text1 {
+    top: 4px;
+    left: 30px;
+    color: rgb(208, 208, 208);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-checkbox1 {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    z-index: 100;
+    position: absolute;
+    align-self: center;
+    animation-name: none;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+  .passwordgeneratorframe-numbers {
+    top: 133px;
+    left: 18px;
+    width: 128px;
+    height: 20px;
+    display: flex;
+    z-index: 8;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .passwordgeneratorframe-group21 {
+    top: 0px;
+    left: 0px;
+    width: 128px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 1;
+    justify-content: flex-start;
+  }
+  .passwordgeneratorframe-text2 {
+    top: 4px;
+    left: 30px;
+    color: rgb(208, 208, 208);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-checkbox2 {
+    top: 4px;
+    left: 4px;
+    width: auto;
+    bottom: 4px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    align-self: center;
+    animation-name: none;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+  .passwordgeneratorframe-symbols {
+    top: 153px;
+    left: 18px;
+    width: 128px;
+    height: 20px;
+    display: flex;
+    z-index: 9;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .passwordgeneratorframe-group22 {
+    top: 0px;
+    left: 0px;
+    width: 128px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 1;
+    justify-content: flex-start;
+  }
+  .passwordgeneratorframe-text3 {
+    top: 4px;
+    left: 30px;
+    color: rgb(208, 208, 208);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-checkbox3 {
+    top: 4px;
+    left: 4px;
+    width: auto;
+    bottom: 4px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    align-self: center;
+    animation-name: none;
+    animation-delay: 0s;
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+  }
+  .passwordgeneratorframe-lower-section {
+    right: 16px;
+    width: 233px;
+    bottom: 15px;
+    height: 107px;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .passwordgeneratorframe-paasword-strengthbox {
+    top: 0px;
+    left: 0px;
+    width: 233px;
+    height: 41px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .passwordgeneratorframe-paasword-strengthbox1 {
+    top: 0px;
+    left: 0px;
+    width: 233px;
+    height: 41px;
+    position: absolute;
+  }
+  .passwordgeneratorframe-text4 {
+    top: 16px;
+    left: 13px;
+    color: rgba(255, 255, 255, 0.58);
+    height: auto;
+    position: absolute;
+    font-size: 10px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-text5 {
+    top: 15px;
+    left: 107px;
+    color: rgba(255, 255, 255, 0.58);
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-strength {
+    top: 7px;
+    left: 158px;
+    width: 61px;
+    height: 27px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  .passwordgeneratorframe-strength1 {
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 27px;
+    z-index: 2;
+    position: absolute;
+    border-color: rgba(211, 209, 209, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .passwordgeneratorframe-strength2 {
+    top: 0px;
+    right: 17px;
+    width: 10px;
+    height: 27px;
+    z-index: 3;
+    position: absolute;
+  }
+  .passwordgeneratorframe-strength3 {
+    top: 0px;
+    left: 17px;
+    width: 10px;
+    height: 27px;
+    z-index: 4;
+    position: absolute;
+  }
+  .passwordgeneratorframe-strength4 {
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 27px;
+    z-index: 5;
+    position: absolute;
+  }
+  .passwordgeneratorframe-button1 {
+    top: 66px;
+    left: 0px;
+    width: 233px;
+    height: 41px;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: #f10000;
+  }
+  .passwordgeneratorframe-rectangle9 {
+    top: 0px;
+    left: 0px;
+    width: 233px;
+    height: 41px;
+    position: absolute;
+  }
+  .passwordgeneratorframe-text6 {
+    top: 12px;
+    left: 90px;
+    color: rgb(0, 0, 0);
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    font-style: SemiBold;
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: 600;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .passwordgeneratorframe-arrow1 {
+    top: 13px;
+    left: 150px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+  }
+  
