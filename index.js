@@ -1,4 +1,4 @@
-var rangeslider = document.getElementById("rangeslider");
+var rangeslider = document.getElementById("rangeslider").value;
 
 var uppercaseBox = document.getElementById("uppercase")
 var lowercaseBox = document.getElementById("lowercase");
@@ -30,8 +30,7 @@ checkButtonStatus()
 
 
 generateButton.addEventListener('click', () => {
-    var passwordLen = parseInt(rangeslider.value);
-    const getPassword = generatePassword(passwordLen,uppercaseBox.checked,lowercaseBox.checked,numbersBox.checked,symbolsBox.checked);
+    const getPassword = generatePassword(rangeslider,uppercaseBox.checked,lowercaseBox.checked,numbersBox.checked,symbolsBox.checked);
     passwordText.value = getPassword;
 });
 
