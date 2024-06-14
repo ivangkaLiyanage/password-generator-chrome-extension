@@ -4,7 +4,7 @@
     "description": "Simple password generator",
     "version": "1.0",
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "index.html",
       "default_icon":  {
         "16": "icons/icon16.png",
         "32": "icons/icon32.png",

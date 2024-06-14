@@ -1,265 +1,30 @@
 <!DOCTYPE html>
-<html lang="english">
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
-
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
-
-      <div class="passwordgeneratorframe-container">
-        <div class="passwordgeneratorframe-passwordgeneratorframe">
-          <div class="passwordgeneratorframe-passwordtextbox">
-            <div class="passwordgeneratorframe-rectangle2">
-              <textarea
-                id="pasword" 
-                readonly
-                placeholder="PTx1fGDaFX"
-                class="passwordgeneratorframe-textarea textarea"
-              ></textarea>
-              <button
-                id="copyButton"
-                type="button"
-                class="passwordgeneratorframe-button button"
-              >
-                <svg
-                  viewBox="0 0 1024 1024"
-                  class="passwordgeneratorframe-icon"
-                >
-                  <path
-                    d="M969.143 219.429c30.286 0 54.857 24.571 54.857 54.857v694.857c0 30.286-24.571 54.857-54.857 54.857h-548.571c-30.286 0-54.857-24.571-54.857-54.857v-164.571h-310.857c-30.286 0-54.857-24.571-54.857-54.857v-384c0-30.286 17.714-72.571 38.857-93.714l233.143-233.143c21.143-21.143 63.429-38.857 93.714-38.857h237.714c30.286 0 54.857 24.571 54.857 54.857v187.429c22.286-13.143 50.857-22.857 73.143-22.857h237.714zM658.286 341.143l-170.857 170.857h170.857v-170.857zM292.571 121.714l-170.857 170.857h170.857v-170.857zM404.571 491.429l180.571-180.571v-237.714h-219.429v237.714c0 30.286-24.571 54.857-54.857 54.857h-237.714v365.714h292.571v-146.286c0-30.286 17.714-72.571 38.857-93.714zM950.857 950.857v-658.286h-219.429v237.714c0 30.286-24.571 54.857-54.857 54.857h-237.714v365.714h512z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="passwordgeneratorframe-passwordselectionbox">
-            <div class="passwordgeneratorframe-rectangle1">
-              <div class="passwordgeneratorframe-container1">
-                <span class="passwordgeneratorframe-character-length">
-                  Character length
-                </span>
-                <span class="passwordgeneratorframe-length">10</span>
-              </div>
-              <input
-                id="length"
-                type="number"
-                placeholder="length"
-                min="6"
-                max="128"
-                class="passwordgeneratorframe-textinput input"
-              />
-              <div class="passwordgeneratorframe-uppercase">
-                <span class="passwordgeneratorframe-text">
-                  Include Uppercase Letters
-                </span>
-                <input
-                  id="uppercase"
-                  type="checkbox"
-                  checked="true"
-                  class="passwordgeneratorframe-checkbox"
-                />
-              </div>
-              <div class="passwordgeneratorframe-lowercase">
-                <div class="passwordgeneratorframe-group2">
-                  <span class="passwordgeneratorframe-text1">
-                    Include Lowercase Letters
-                  </span>
-                  <input
-                    id="lowercase"
-                    type="checkbox"
-                    checked="true"
-                    class="passwordgeneratorframe-checkbox1"
-                  />
-                </div>
-              </div>
-              <div class="passwordgeneratorframe-numbers">
-                <div class="passwordgeneratorframe-group21">
-                  <span class="passwordgeneratorframe-text2">
-                    Include Numbers
-                  </span>
-                  <input
-                    id="numbers"
-                    type="checkbox"
-                    checked="true"
-                    class="passwordgeneratorframe-checkbox2"
-                  />
-                </div>
-              </div>
-              <div class="passwordgeneratorframe-symbols">
-                <div class="passwordgeneratorframe-group22">
-                  <span class="passwordgeneratorframe-text3">
-                    Include Symbols
-                  </span>
-                  <input
-                    id="symbols"
-                    type="checkbox"
-                    checked="true"
-                    class="passwordgeneratorframe-checkbox3"
-                  />
-                </div>
-              </div>
-              <div class="passwordgeneratorframe-lower-section">
-                <div class="passwordgeneratorframe-paasword-strengthbox">
-                  <img
-                    alt="PaaswordStrengthbox33"
-                    src="public/external/paaswordstrengthbox33-91jw-200h.png"
-                    class="passwordgeneratorframe-paasword-strengthbox1"
-                  />
-                  <span class="passwordgeneratorframe-text4">STRENGTH</span>
-                  <span class="passwordgeneratorframe-text5">MEDIUM</span>
-                  <div class="passwordgeneratorframe-strength">
-                    <img
-                      alt="strength142"
-                      src="public/external/strength142-bvhe-200h.png"
-                      class="passwordgeneratorframe-strength1"
-                    />
-                    <img
-                      alt="strength243"
-                      src="public/external/strength243-1exm-200w.png"
-                      class="passwordgeneratorframe-strength2"
-                    />
-                    <img
-                      alt="strength344"
-                      src="public/external/strength344-cmw-200w.png"
-                      class="passwordgeneratorframe-strength3"
-                    />
-                    <img
-                      alt="strength445"
-                      src="public/external/strength445-yhv-200w.png"
-                      class="passwordgeneratorframe-strength4"
-                    />
-                  </div>
-                </div>
-                <button id="generate" class="passwordgeneratorframe-button1">
-                  <img
-                    alt="Rectangle934"
-                    src="public/external/rectangle934-m8a1.svg"
-                    class="passwordgeneratorframe-rectangle9"
-                  />
-                  <span class="passwordgeneratorframe-text6">Generate</span>
-                  <img
-                    alt="Arrow11011"
-                    src="public/external/arrow11011-ga2.svg"
-                    class="passwordgeneratorframe-arrow1"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <link rel="stylesheet" href="oldStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <label for="length">Length:</label>
+        <input type="number" name="number" id="length" value="12" min="6" max="128">
+        <label for="uppercase">Uppercase</label>
+        <input type="checkbox" id="uppercase" >
+        <label for="lowercase">Lowecase</label >
+        <input type="checkbox" id="lowercase" >
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="numbers" >
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="symbols" >
+        <br>
+        <button id="generate">Generate</button>
+        <br>
+        <textarea id="pasword" readonly ></textarea>
+        <button id="copyButton">Copy Password</button>
     </div>
-   <script src="popup.js"></script>
-  </body>
+    <script src="popup.js"></script>
+</body>
 </html>

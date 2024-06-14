@@ -1,0 +1,18 @@
+body{
+    width: 200px;
+    padding: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+input, textarea{
+    width: 100%;
+    margin: 5px 0px;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+}
